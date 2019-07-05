@@ -78,24 +78,6 @@ jobs:
          - cd $HOME/build_dials/modules/dials
          - pytest -ra -n 2 --runslow
 
-    - name: "Flake8 - Python 2.7"
-      addons: false
-      cache: false
-      before_cache: false
-      script:
-         - .travis/run-flake8
-      if: type = pull_request
-
-    - name: "Flake8 - Python 3.7"
-      addons: false
-      cache: false
-      before_cache: false
-      dist: xenial
-      python: 3.7
-      script:
-         - .travis/run-flake8
-      if: type = pull_request
-
     - name: "Build - Python 3.6"
          # Same as above really, but on Python 3 this time
       python: 3.6
@@ -146,6 +128,24 @@ jobs:
          # Finally. Do what we are here for. Run tests. Yay.
          - cd $HOME/build_dials/modules/dials
          - pytest -ra -n 2 --runslow
+
+    - name: "Flake8 - Python 2.7"
+      addons: false
+      cache: false
+      before_cache: false
+      script:
+         - .travis/run-flake8
+      if: type = pull_request
+
+    - name: "Flake8 - Python 3.7"
+      addons: false
+      cache: false
+      before_cache: false
+      dist: xenial
+      python: 3.7
+      script:
+         - .travis/run-flake8
+      if: type = pull_request
 
 before_cache:
   - $HOME/build_dials/modules/dials/.travis/clean-cctbx-dxtbx
