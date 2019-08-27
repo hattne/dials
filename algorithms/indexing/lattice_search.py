@@ -13,6 +13,8 @@
 from __future__ import absolute_import, division
 from __future__ import print_function
 
+from future import standard_library
+standard_library.install_aliases()
 import itertools
 import logging
 import math
@@ -414,7 +416,7 @@ class BasisVectorSearch(LatticeSearch):
         if self.params.debug:
             # print a table of the angles between each pair of vectors
 
-            from cStringIO import StringIO
+            from io import StringIO
 
             s = StringIO()
 

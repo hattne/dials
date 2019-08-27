@@ -1,6 +1,8 @@
 """Merging functions for experiment lists and reflection tables."""
+from future import standard_library
+standard_library.install_aliases()
 import logging
-from cStringIO import StringIO
+from io import StringIO
 from dials.array_family import flex
 from dials.command_line.space_group import run_sys_abs_checks
 from dials.algorithms.scaling.scaling_library import (

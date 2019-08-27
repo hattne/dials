@@ -4,9 +4,11 @@
 Command line script to allow merging and truncating of a dials dataset.
 """
 from __future__ import absolute_import, division, print_function
+from future import standard_library
+standard_library.install_aliases()
 import logging
 import sys
-from cStringIO import StringIO
+from io import StringIO
 from dials.util import log, show_mail_on_error, Sorry
 from dials.util.options import OptionParser, flatten_reflections, flatten_experiments
 from dials.util.version import dials_version
