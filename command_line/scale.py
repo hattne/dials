@@ -1,6 +1,8 @@
 #!/usr/bin/env python
 # coding: utf-8
 from __future__ import absolute_import, division, print_function
+from builtins import range
+from builtins import map
 import time
 import logging
 import sys

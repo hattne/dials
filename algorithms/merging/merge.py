@@ -1,4 +1,5 @@
 """Merging functions for experiment lists and reflection tables."""
+from builtins import zip
 import logging
 from cStringIO import StringIO
 from dials.array_family import flex

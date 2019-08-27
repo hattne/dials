@@ -3,6 +3,9 @@
 # LIBTBX_SET_DISPATCHER_NAME dials.filter_reflections
 
 from __future__ import absolute_import, division, print_function
+from builtins import range
+from builtins import zip
+from builtins import next
 import logging
 from operator import itemgetter
 import token

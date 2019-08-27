@@ -1,5 +1,6 @@
 from __future__ import absolute_import, division, print_function
 
+from builtins import zip
 """Tests for dials.split_experiments when experiment ids are set"""
 
 import procrunner

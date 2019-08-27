@@ -1,5 +1,8 @@
 from __future__ import absolute_import, division, print_function
 
+from builtins import map
+from builtins import zip
+from builtins import range
 import collections
 import glob
 import os

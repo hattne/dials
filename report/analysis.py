@@ -1,6 +1,8 @@
 """Calculations relevant to reporting."""
 from __future__ import absolute_import, division, print_function
 
+from builtins import range
+from builtins import zip
 from cctbx import miller
 from dials.algorithms.scaling.scaling_library import scaled_data_as_miller_array
 from dials.util.batch_handling import (

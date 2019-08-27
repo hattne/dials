@@ -4,6 +4,8 @@ Unit testing for the export_mtz.py routines
 
 from __future__ import absolute_import, division, print_function
 
+from builtins import zip
+from builtins import range
 import itertools
 
 from dials.util.batch_handling import calculate_batch_offsets

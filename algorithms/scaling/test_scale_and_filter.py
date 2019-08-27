@@ -1,6 +1,8 @@
 from __future__ import absolute_import, division, print_function
 
 # test that compute_delta_cchalf returns required values
+from builtins import str
+from builtins import range
 import mock
 from libtbx import phil
 from dxtbx.model.experiment_list import ExperimentList

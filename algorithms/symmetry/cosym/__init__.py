@@ -7,6 +7,8 @@ the presence of an indexing ambiguity.
 """
 from __future__ import absolute_import, division, print_function
 
+from builtins import range
+from builtins import str
 import copy
 import json
 import logging

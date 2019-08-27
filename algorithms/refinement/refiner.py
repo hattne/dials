@@ -15,6 +15,10 @@ what should usually be used to construct a Refiner."""
 
 from __future__ import absolute_import, division, print_function
 
+from builtins import next
+from builtins import zip
+from builtins import range
+from builtins import str
 import copy
 import logging
 import math
