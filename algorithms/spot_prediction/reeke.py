@@ -3,6 +3,7 @@ prediction based on the Reeke algorithm (see Mosflm)"""
 
 from __future__ import absolute_import, division, print_function
 
+from builtins import object
 import math
 
 from scitbx import matrix
@@ -30,7 +31,7 @@ def solve_quad(a, b, c):
         return [None]
 
 
-class reeke_model:
+class reeke_model(object):
     """Model and methods for the Reeke algorithm"""
 
     def __init__(self, ub_beg, ub_end, axis, s0, dmin, margin=3):

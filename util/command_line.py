@@ -10,6 +10,7 @@
 
 from __future__ import absolute_import, division, print_function
 
+from builtins import object
 import time
 import sys
 
@@ -38,7 +39,7 @@ def parse_range_list_string(string):
 interactive_console = debug_console
 
 
-class ProgressBarTimer:
+class ProgressBarTimer(object):
     """ A simple timer for the progress bar. """
 
     def __init__(self):
@@ -76,7 +77,7 @@ class ProgressBarTimer:
         return self._n_seconds_left
 
 
-class ProgressBar:
+class ProgressBar(object):
     """ A command line progress bar. """
 
     def __init__(

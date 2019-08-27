@@ -13,6 +13,7 @@ principally Target and ReflectionManager."""
 # python and cctbx imports
 from __future__ import absolute_import, division, print_function
 
+from builtins import object
 import abc
 import math
 
@@ -674,7 +675,7 @@ class LeastSquaresPositionalResidualWithRmsdCutoff(Target):
         return False
 
 
-class SparseGradientsMixin:
+class SparseGradientsMixin(object):
     """Mixin class to build a sparse Jacobian from gradients of the prediction
     formula stored as sparse vectors, and allow concatenation of gradient vectors
     that employed sparse storage."""
