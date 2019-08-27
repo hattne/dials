@@ -11,6 +11,7 @@ Usage: dials.frame_orientations refined.expt
 
 from __future__ import division, print_function, absolute_import
 
+from builtins import object
 import sys
 
 import dials.util

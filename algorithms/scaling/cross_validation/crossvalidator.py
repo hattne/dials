@@ -4,6 +4,7 @@ cross validator for dials.scale
 """
 from __future__ import absolute_import, division, print_function
 
+from builtins import object
 import abc
 import itertools
 from copy import deepcopy

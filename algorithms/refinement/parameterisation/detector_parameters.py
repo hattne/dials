@@ -1,5 +1,6 @@
 from __future__ import absolute_import, division, print_function
 
+from builtins import object
 from functools import reduce
 
 from dials.algorithms.refinement.parameterisation.model_parameters import (

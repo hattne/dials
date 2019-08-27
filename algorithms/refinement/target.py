@@ -13,6 +13,7 @@ principally Target and ReflectionManager."""
 # python and cctbx imports
 from __future__ import absolute_import, division, print_function
 
+from builtins import object
 import abc
 import math
 

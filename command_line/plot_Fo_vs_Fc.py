@@ -10,6 +10,7 @@ Usage: dials.plot_Fo_vs_Fc hklin=refined.mtz
 """
 
 from __future__ import division, print_function, absolute_import
+from builtins import object
 import sys
 from dials.util import Sorry
 from dials.util.options import OptionParser

@@ -3,6 +3,7 @@ between two vectors with respect to each element of the vectors"""
 
 from __future__ import absolute_import, division, print_function
 
+from builtins import object
 import math
 import random
 

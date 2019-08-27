@@ -1,5 +1,6 @@
 from __future__ import division, print_function, absolute_import
 
+from builtins import object
 import logging
 import math
 

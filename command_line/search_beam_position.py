@@ -2,6 +2,7 @@ from __future__ import absolute_import, division, print_function
 
 # LIBTBX_PRE_DISPATCHER_INCLUDE_SH export PHENIX_GUI_ENVIRONMENT=1
 
+from builtins import object
 import cmath
 import copy
 import logging

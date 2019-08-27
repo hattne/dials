@@ -1,5 +1,6 @@
 from __future__ import absolute_import, division, print_function
 
+from builtins import object
 import future.moves.itertools as itertools
 import libtbx.easy_mp
 import warnings
